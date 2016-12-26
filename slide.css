@@ -18,27 +18,36 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+blockquote {
+    padding: 0;
+    margin: 0;
+}
+
 h1 {
-    font-size: 36vh;
+    font-size: 48vh;
 }
 
 h2 {
-    font-size: 25vh;
+    font-size: 34vh;
+}
+
+blockquote h2 {
+    padding: 0 18vh;
 }
 
 h3 {
-    font-size: 20vh;
+    font-size: 28vh;
 }
 
 h4 {
-    font-size: 16vh;
+    font-size: 20vh;
 }
 
 h5 {
-    font-size: 13vh;
+    font-size: 16vh;
 }
 
 h6 {
-    font-size: 8vh;
+    font-size: 13vh;
 }
 
