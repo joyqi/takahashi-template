@@ -1,0 +1,42 @@
+* { box-sizing: border-box }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#slide {
+    margin: 0 auto;
+    text-align: center;
+    padding: 1vh;
+    font-family: Noto Sans CJK SC, PingFang SC, Hiragino Sans GB, "Microsoft YaHei", "WenQuanYi Micro Hei";
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 36vh;
+}
+
+h2 {
+    font-size: 25vh;
+}
+
+h3 {
+    font-size: 20vh;
+}
+
+h4 {
+    font-size: 16vh;
+}
+
+h5 {
+    font-size: 13vh;
+}
+
+h6 {
+    font-size: 8vh;
+}
+
