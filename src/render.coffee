@@ -25,6 +25,16 @@ renderSlide = (index) ->
     #history.pushState index, '', "#{index}"
 
 
+prevSlide = ->
+    index = if slideIndex > 0 then slideIndex - 1 else 0
+    renderSlide index
+
+
+nextSlide = ->
+    index = if slideIndex < slides.length - 2 then slideIndex + 1 else slides.length - 1
+    renderSlide index
+
+
 document.addEventListener 'DOMContentLoaded', ->
     slideEl = document.getElementById 'slide'
     scripts = document.getElementsByTagName 'script'
@@ -48,4 +58,16 @@ document.addEventListener 'DOMContentLoaded', ->
             slideEl.style.height = window.innerWidth * 3 / 4 + 'px'
 
     window.addEventListener 'resize', resize
+
+    window.onkeydown = (e) ->
+        if e.key?
+            if e.key is 'ArrowLeft'
+                prevSlide()
+            else if e.key is 'ArrowRight'
+                nextSlide()
+        else if e.keyIdentifier
+            if e.keyIdentifier is 'Left'
+                prevSlide()
+            else if e.keyIdentifier is 'Right'
+                nextSlide()
 
