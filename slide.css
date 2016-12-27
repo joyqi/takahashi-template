@@ -6,20 +6,11 @@ body {
 }
 
 @font-face { 
-	font-family: "ctb_hanamin"; 
-	src: url(./fonts/ctb_hanamin.eot); 
+	font-family: "SourceHanSansCN"; 
+	src: url(./fonts/SourceHanSansCN-Regular.eot); 
 	src: local(" "), 
-		url(./fonts/ctb_hanamin.ttf) format("truetype"), 
-		url(./fonts/ctb_hanamin.woff) format("woff");
-
-}
-
-@font-face { 
-	font-family: "xht"; 
-	src: url(./fonts/xht.eot); 
-	src: local(" "), 
-		url(./fonts/xht.ttf) format("truetype"), 
-		url(./fonts/xht.woff) format("woff");
+		url(./fonts/SourceHanSansCN-Regular.otf) format("opentype"), 
+		url(./fonts/SourceHanSansCN-Regular.woff) format("woff");
 
 }
 
@@ -27,9 +18,14 @@ body {
     margin: 0 auto;
     text-align: center;
     padding: 1vh;
-    font-family: "xht";
+    font-family: "SourceHanSansCN";
     border-left: 1px dotted #CCC;
     border-right: 1px dotted #CCC;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -43,39 +39,63 @@ blockquote {
 }
 
 h1 {
-    font-size: 48vh;
-}
-
-blockquote h1 {
-    margin-top: -3vh;
-    line-height: 50vh;
+    font-size: 46vh;
+    line-height: 46vh;
 }
 
 h2 {
     font-size: 36vh;
-}
-
-blockquote h2 {
-    margin-top: 20vh;
+    line-height: 38vh;
 }
 
 h3 {
     font-size: 28vh;
-}
-
-blockquote h3 {
-    margin-top: 22vh;
+    line-height: 30vh;
 }
 
 h4 {
     font-size: 20vh;
+    line-height: 22vh;
 }
 
 h5 {
     font-size: 16vh;
+    line-height: 18vh;
 }
 
 h6 {
     font-size: 13vh;
+    line-height: 15vh;
+}
+
+ul, ol {
+    padding: 0 5vh;
+    margin: 0;
+    text-align: left;
+    font-size: 20vh;
+    line-height: 28vh;
+}
+
+ol {
+    font-size: 11vh;
+    line-height: 18vh;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+strong {
+    color: #A20004;
+}
+
+a {
+    color: #0000DD;
+    text-decoration: underline;
 }
 
