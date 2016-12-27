@@ -5,17 +5,36 @@ body {
     padding: 0;
 }
 
+@font-face { 
+	font-family: "ctb_hanamin"; 
+	src: url(./fonts/ctb_hanamin.eot); 
+	src: local(" "), 
+		url(./fonts/ctb_hanamin.ttf) format("truetype"), 
+		url(./fonts/ctb_hanamin.woff) format("woff");
+
+}
+
+@font-face { 
+	font-family: "xht"; 
+	src: url(./fonts/xht.eot); 
+	src: local(" "), 
+		url(./fonts/xht.ttf) format("truetype"), 
+		url(./fonts/xht.woff) format("woff");
+
+}
+
 #slide {
     margin: 0 auto;
     text-align: center;
     padding: 1vh;
-    font-family: Noto Sans CJK SC, PingFang SC, Hiragino Sans GB, "Microsoft YaHei", "WenQuanYi Micro Hei";
+    font-family: "xht";
     border-left: 1px dotted #CCC;
     border-right: 1px dotted #CCC;
 }
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
+    font-weight: 100;
 }
 
 blockquote {
@@ -27,16 +46,25 @@ h1 {
     font-size: 48vh;
 }
 
+blockquote h1 {
+    margin-top: -3vh;
+    line-height: 50vh;
+}
+
 h2 {
-    font-size: 34vh;
+    font-size: 36vh;
 }
 
 blockquote h2 {
-    padding: 0 18vh;
+    margin-top: 20vh;
 }
 
 h3 {
     font-size: 28vh;
+}
+
+blockquote h3 {
+    margin-top: 22vh;
 }
 
 h4 {
