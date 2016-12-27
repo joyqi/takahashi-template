@@ -48,6 +48,9 @@ nextSlide = ->
 
 adjustSlide = ->
     img = slideEl.querySelector 'img'
+    quote = slideEl.querySelector 'blockquote'
+
+    document.body.className = if quote? then 'reverse' else ''
 
     if img?
         img.onload = adjustSlideCallback

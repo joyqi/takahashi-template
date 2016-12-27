@@ -59,8 +59,10 @@
   };
 
   adjustSlide = function() {
-    var img;
+    var img, quote;
     img = slideEl.querySelector('img');
+    quote = slideEl.querySelector('blockquote');
+    document.body.className = quote != null ? 'reverse' : '';
     if (img != null) {
       return img.onload = adjustSlideCallback;
     } else {

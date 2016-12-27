@@ -5,6 +5,11 @@ body {
     padding: 0;
 }
 
+body.reverse {
+    background: #000;
+    color: #FFF;
+}
+
 @font-face { 
 	font-family: "SourceHanSansCN"; 
 	src: url(./fonts/SourceHanSansCN-Regular.eot); 
@@ -22,6 +27,10 @@ body {
     border-left: 1px dotted #CCC;
     border-right: 1px dotted #CCC;
     overflow: hidden;
+}
+
+body.reverse #slide {
+    border-color: #333;
 }
 
 img {
@@ -92,6 +101,11 @@ p {
 
 strong {
     color: #A20004;
+}
+
+em {
+    font-style: normal;
+    color:#777;
 }
 
 a {
