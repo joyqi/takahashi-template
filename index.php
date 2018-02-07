@@ -9,6 +9,8 @@ $files = glob('./page/*.html');
         <title>Joyqi 的PPT</title>
     </head>
     <body>
+        <h1>JoyQi的PPT存档</h1>
+        <hr>
         <ul>
         <?php foreach ($files as $file): ?>
             <li><a href="<?php echo $file; ?>"><?php echo basename($file); ?></a></li>
