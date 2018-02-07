@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+        <title>Thinging In Programing</title>
+        <link rel="stylesheet" href="../slide.css" />
+        <script src="../hyperdown/Parser.js"></script>
+        <script src="../slide.js"></script>
+    </head>
+    <body>
+<div id="slide"></div>
+<script type="text/markdown">
+#### 开发者眼中的
+### **区块链**
+
+------
+
+1. **SegmentFault**
+2. 祁宁
+3. joyqi@sf.gg
+4. @joyqi
+
+------
+
+> ## 区块链
+
+------
+
+![比特币](../img/2018-2-7-alipay/bitcoin-2.jpg)
+
+------
+
+### **中本聪**
+### 2009年
+[bitcoin.org/bitcoin.pdf](http://bitcoin.org/bitcoin.pdf)
+
+------
+
+# **目标**
+
+------
+
+1. 去中心化(P2P)
+2. 限制总量(2100万个)
+3. 10分钟一个**区块**
+4. 奖励(挖矿)
+
+------
+
+# 特点
+
+------
+
+1. 不可篡改(哈希 SHA256)
+2. 向所有人公开(P2P, 分布式存储)
+3. 匿名(非对称加密)
+
+------
+
+> # 数据结构
+
+------
+
+![区块链](../img/2018-2-7-alipay/blockchain.png)
+
+------
+
+1. **Index:** 索引
+2. **PH:** 上一个区块的Hash
+3. **Timestamp:** 时间戳
+4. **Data:** 数据 (转账记录)
+5. **Hash:** 当前区块Hash
+6. **Nonce:** 寻找区块迭代
+
+-------
+
+> # HASH
+
+-------
+
+**`SHA256`**`(index + ph + timestamp + data + nonce)`
+
+-------
+
+`0x`**`00000`**`18035a828da0...`
+
+-------
+
+# **挖矿**
+
+-------
+
+#### 难度
+#### 0的数量
+**每2016个区块根据全网算力调整, 适配10分钟**
+
+-------
+
+![区块链](../img/2018-2-7-alipay/bitcoin-mining-hardware.jpg)
+
+-------
+
+* 权力分散
+* 去中心化
+
+-------
+
+##### **缺点**
+
+1. 慢(1M, 10min)
+2. 功能单一
+3. 通缩
+
+-------
+
+![以太坊](../img/2018-2-7-alipay/Ethereum-Logo.png)
+
+-------
+
+#### The World Computer
+
+-------
+
+### 在区块链上跑计算?
+
+-------
+
+#### **信任**
+
+1. 被所有人验证
+2. 任何人不能篡改
+3. 匿名
+
+-------
+
+### 智能合约
+## EVM
+
+-------
+
+![token](../img/2018-2-7-alipay/token-crowdsale.png)
+
+-------
+
+### 码农的
+### 疯狂尝试
+
+-------
+
+![dao](../img/2018-2-7-alipay/dao-new-breath-of-blockchain-ethereum-01.jpg)
+
+-------
+
+> ### HACKED
+
+-------
+
+![ico](../img/2018-2-7-alipay/ico-initial-coin-offering.jpg)
+
+-------
+
+![token code](../img/2018-2-7-alipay/token-coin.png)
+
+-------
+
+1. ethereum.org (SSD)
+2. JAXX, imToken
+3. www.rinkeby.io
+4. joyqi.com/ppt/**blockchain-2018**
+
+-------
+
+# 谢谢
+
+</script>
+    </body>
+</html>
