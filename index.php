@@ -1,5 +1,5 @@
 <?php
-$files = glob('./*.html');
+$files = glob('./page/*.html');
 ?>
 <!DOCTYPE html>
 <html>
@@ -9,8 +9,10 @@ $files = glob('./*.html');
         <title>Joyqi 的PPT</title>
     </head>
     <body>
+        <ul>
         <?php foreach ($files as $file): ?>
-            <a href="<?php echo $file; ?>"><?php echo basename($file); ?></a>
+            <li><a href="<?php echo $file; ?>"><?php echo basename($file); ?></a></li>
         <?php endforeach; ?>
+        </ul>
     </body>
 </html>
